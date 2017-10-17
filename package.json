@@ -1,0 +1,17 @@
+{
+  "name": "multer-upload",
+  "version": "1.0.0",
+  "description": "multer boilerplate",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "nodemon app.js"
+  },
+  "author": "Chris Stanton",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "multer": "^1.3.0"
+  }
+}
