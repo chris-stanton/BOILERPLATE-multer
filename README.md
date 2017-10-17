@@ -20,7 +20,7 @@
   1. Download zip file or ``git clone`` repo
   2. Open terminal or equivalent and navigate into folder
   3. Run commands:
-    - `` npm install `` Installs Node Packages including dependencies from package.json
+    - `` npm install `` Installs Node dependencies from package.json
     - ``` npm start ``` Starts server
     - ``` npm test ``` Starts server using Nodemon
   4. Server is listening on port: 5000
