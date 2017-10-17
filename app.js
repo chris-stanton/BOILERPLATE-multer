@@ -7,7 +7,7 @@ const port = 5000;
 
 // Set Multer Storage Engine
 const storage = multer.diskStorage({
-  destination: '../public/uploads/',
+  destination: './public/uploads/',
   filename: function(req, file, cb){
     // renames file
     cb(null,file.fieldname + '-' + Date.now() + path.extname(file.originalname));
@@ -43,7 +43,7 @@ function checkFileType(file, cb){
 app.set('view engine', 'ejs');
 
 // Public Folder
-app.use(express.static('../public'));
+app.use(express.static('./public'));
 
 app.get('/', (req, res) => res.render('../public/views'));
 
@@ -61,7 +61,7 @@ app.post('/upload', (req, res) => {
       } else {
         res.render('../public/views/index', {
           msg: 'File Uploaded!',
-          file: `../uploads/${req.file.filename}`
+          file: '../uploads/' + req.file.filename
         });
       }
     }
